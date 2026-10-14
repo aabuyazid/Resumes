@@ -1,0 +1,48 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative,10pt,compact]{yaac-another-awesome-cv}
+
+% The class is hard-coded for A4; switch to US Letter and widen the tables to match
+\geometry{letterpaper, left=1.5cm, right=1.5cm, top=1.2cm, bottom=1.4cm}
+\setlength{\fulllength}{18.3cm}
+\setleftcolumnlength{2.5cm}
+
+% The class links LinkedIn to the French-language profile page; use the default one instead
+\renewcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://www.linkedin.com/in/#1}{linkedin.com/in/#1}}
+
+\name{Arkan}{Abuyazid}
+\tagline{}
+\socialinfo{
+	\email{ata757@tamu.edu}
+	\linkedin{arkan-abuyazid}
+	\github{aabuyazid}\\
+	\address{Dallas, TX}
+	\infos{Work Authorization: U.S. Person}
+}
+
+\begin{document}
+	\selectlanguage{english}
+
+	\makecvheader
+
+	\makecvfooter
+		{}
+		{\textsc{Arkan Abuyazid - Resume}}
+		{\thepage}
+
+	\input{section_scolarite}				% Education
+	\input{section_competences}				% Skills
+	\input{section_experience}				% Experience
+	\input{section_interets}				% Additional information
+
+\end{document}
